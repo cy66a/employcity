@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>LOREMIPSUM.NET</title>
+</head>
+<body>
+
+    <header class="header">
+    	<div class="container">
+    		<div class="header__inner">
+    			<a class="header__logo" href="#">
+    				Loremipsum<span class="light-blue">.net</span>
+    			</a>
+    			<div class="header__menu menu">
+    				<div class="menu__icon">
+    					<span></span>
+    				</div>
+    				<nav class="menu__body">
+    					<ul class="menu__list">
+    						<li><a class="menu__link" href="#" data-goto=".intro">Бизнес</a></li>
+    						<li><a class="menu__link" href="#" data-goto=".about">О нас</a></li>
+    						<li><a class="menu__link" href="#" data-goto=".prices">Цены</a></li>
+    						<li><a class="menu__link" href="#" data-goto=".order">Оформить заказ</a></li>
+    					</ul>
+    				</nav>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+    
+    <main class="main">
+    
+    	<section class="intro">
+    		<div class="container">
+    			<div class="intro__inner">
+    	
+    				<h1 class="intro__title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+    					<span class="warm-blue">Lorem ipsum </span>
+    					dolor sit<br>
+    					amet consectetur
+    					<span class="warm-blue">adipiscing</span>
+    				</h1>
+    	
+    				<div class="intro__description">
+    					<ul class="intro__list">
+    						<h3 class="intro__sub-title">At vero eos et accusamus et iusto odio dignissimos ducimus!</h3>
+    						<li class="intro__item">Totam rem aperiam eaque ipsa</li>
+    						<li class="intro__item">Sit voluptatem accusantium doloremque laudantium</li>
+    						<li class="intro__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+    					</ul>
+    				</div>
+    	
+    				<div class="intro__buttons">
+    					<a class="intro__order-button button" href="#" data-goto=".order">
+    						Заказать
+    					</a>
+    					<a class="intro__more-button button button--white" href="#" data-goto=".order">
+    						Подробнее
+    					</a>
+    				</div>
+    	
+    			</div>
+    		</div>
+    	</section>
+    	<section class="about"></section>
+    	<section class="prices"></section>
+    	<section class="order">
+    		<div class="container">
+    			<div class="order__inner">
+    	
+    				<h2 class="order__title">
+    					Оформление <span class="warm-blue">заказа</span>
+    				</h2>
+    	
+    				<h3 class="order__sub-title">
+    					Перед заполнением формы ознакомьтесь с нашей схемой работы!
+    				</h3>
+    	
+    				<div class="order__scheme scheme">
+    					<ul class="scheme__list">
+    						<li class="scheme__item scheme__item--1" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
+    							<div class="scheme__logo scheme__logo--1"></div>
+    							<p class="scheme__text">
+    								Lorem ipsum dolor sit amet
+    							</p>
+    						</li>
+    						<li class="scheme__item scheme__item--2" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">
+    							<div class="scheme__logo scheme__logo--2"></div>
+    							<p class="scheme__text">
+    								Сonsecteturadipiscing elit
+    							</p>
+    						</li>
+    						<li class="scheme__item scheme__item--3" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
+    							<div class="scheme__logo scheme__logo--3"></div>
+    							<p class="scheme__text">
+    								Sed do eiusmod tempor
+    							</p>
+    						</li>
+    						<li class="scheme__item scheme__item--4" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="600">
+    							<div class="scheme__logo scheme__logo--4"></div>
+    							<p class="scheme__text">
+    								Esse cillum dolore eu fugiat
+    							</p>
+    						</li>
+    						<li class="scheme__item scheme__item--5" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="600">
+    							<div class="scheme__logo scheme__logo--5"></div>
+    							<p class="scheme__text">
+    								Excepteur sint occaecat cupidatat non proident
+    							</p>
+    						</li>
+    					</ul>
+    				</div>
+    				
+    				<form class="order__form form" action="mail.php" method="POST" enctype="multipart/form-data">
+    				
+    					<div class="form__group form__group--1">
+    				
+    						<select class="form__select">
+    							<option value="0" style="display: none;">Выберите тип системы</option>
+    							<option value="1">Sed ut perspiciatis</option>
+    							<option value="2">Nemo enim ipsam</option>
+    							<option value="3">Et harum quidem</option>
+    							<option value="4">Temporibus autem</option>
+    							<option value="5">Itaque earum rerum</option>
+    						</select>
+    				
+    						<input class="form__email" type="email" name="e-mail" id="email" placeholder="Ваш e-mail">
+    				
+    						<input class="form__name" type="text" name="name" placeholder="Ваше имя">
+    				
+    					</div>
+    				
+    					<div class="form__group form__group--2">
+    				
+    						<div class="form__range-block">
+    							<div class="form__text">
+    								<label for="range">Sed ut perspiciatis, unde omnis iste natus</label>
+    								<output class="form__output" id="form__output">70%</output>
+    							</div>
+    				
+    							<input class="form__range" id="range" type="range" value="70" min="0" max="100"
+    								oninput="form__output.value=value + '%'">
+    						</div>
+    				
+    						<input class="form__file" type="file" name="file" id="form__file">
+    						<label class="form__label" for="form__file">
+    							<img src="assets/images/icons/file-icon.svg" alt="File icon">
+    							<span>Прикрепить файл</span>
+    						</label>
+    				
+    					</div>
+    				
+    					<div class="form__group form__group--3">
+    						<button class="form__button button" type="submit">Отправить</button>
+    					</div>
+    				</form>
+    			</div>
+    		</div>
+    	</section>
+    </main>
+
+    <footer class="footer">
+    	<div class="container">
+    		<div class="footer__inner">
+    
+    			<div class="footer__copyright">
+    				© 2018 «LoremIpsum.net» Все права защищены.
+    			</div>
+    
+    			<div class="footer__splitter"></div>
+    
+    			<div class="footer__payment payment">
+    				<div class="payment__method payment__method--qiwi">
+    					<img class="payment__icon" src="assets/images/icons/qiwi-icon.svg" alt="QIWI wallet">
+    					<p class="payment__text">QIWI wallet</p>
+    				</div>
+    				<div class="payment__method payment__method--yandex">
+    					<img class="payment__icon" src="assets/images/icons/yandex-icon.svg" alt="Yandex Money">
+    					<p class="payment__text">Yandex Money</p>
+    				</div>
+    				<div class="payment__method payment__method--web">
+    					<img class="payment__icon" src="assets/images/icons/web-icon.svg" alt="Web Money">
+    					<p class="payment__text">Web Money</p>
+    				</div>
+    			</div>
+    
+    			<div class="footer__splitter">
+    			</div>
+    
+    			<div class="footer__social social">
+    				<a class="social__block" href="mailto:cy66a@mail.ru">
+    					<img class="social__icon" src="assets/images/icons/mail-icon.svg" alt="e-mail">
+    					<p class="social__text">info@ipsum228.com</p>
+    				</a>
+    				<a class="social__block" href="https://www.vk.com/cy66a" target="_blank">
+    					<img class="social__icon" src="assets/images/icons/vk-icon.svg" alt="vkontakte">
+    					<p class="social__text">Мы вконтакте</p>
+    				</a>
+    			</div>
+    
+    		</div>
+    	</div>
+    </footer>
+    <div class="scroll-up">
+    	<svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+    		<path class="scroll-up__svg-path" 
+    			d="
+    				M24,0
+    				a24,24 0 0,1 0,48
+    				a24,24 0 0,1 0,-48
+    			"
+    		/>
+    	</svg>
+    </div>
+    <!-- Подключение библиотеки AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+      </script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+.scheme {
+  margin: 0 0 8rem 0;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "a b c d e";
+    gap: 2rem;
+
+    @include breakpoint($md-bp) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+        "a b"
+        "d c"
+        "e .";
+
+      margin: 0 auto;
+      max-width: 40rem;
+    }
+
+    @include breakpoint($mobile-bp) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1fr, 5);
+      grid-template-areas: 
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--1 {
+      grid-area: a;
+    }
+
+    &--2 {
+      grid-area: b;
+    }
+
+    &--3 {
+      grid-area: c;
+    }
+
+    &--4 {
+      grid-area: d;
+    }
+
+    &--5 {
+      grid-area: e;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    margin: 0 0 2rem 0;
+    width: 10rem;
+    height: 10rem;
+    background: $blue;
+    border-radius: 50%;
+    border: 5px solid $middle-blue;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("../images/icons/dots-icon.svg") center center no-repeat;
+      width: 110px;
+      height: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 110px;
+      z-index: -1;
+    }
+
+    &--1 {
+      background: $blue url("../images/icons/scheme-icon-1.svg") center center
+        no-repeat;
+
+        @include breakpoint($mobile-bp) {
+          &::before {
+            top: 110px;
+            left: 50%;
+            transform: translateX(-50%) rotate(90deg);
+          }
+        }
+    }
+
+    &--2 {
+      background: $blue url("../images/icons/scheme-icon-2.svg") center center
+        no-repeat;
+
+      @include breakpoint($md-bp) {
+        &::before {
+          top: 110px;
+          left: 50%;
+          transform: translateX(-50%) rotate(90deg);
+        }
+      }
+    }
+
+    &--3 {
+      background: $blue url("../images/icons/scheme-icon-3.svg") center center
+        no-repeat;
+
+      @include breakpoint($md-bp) {
+        &::before {
+          left: -110px;
+        }
+      }
+
+      @include breakpoint($mobile-bp) {
+        &::before {
+          top: 110px;
+          left: 50%;
+          transform: translateX(-50%) rotate(90deg);
+        }
+      }
+    }
+
+    &--4 {
+      background: $blue url("../images/icons/scheme-icon-4.svg") center center
+        no-repeat;
+
+      @include breakpoint($md-bp) {
+        &::before {
+          top: 110px;
+          left: 50%;
+          transform: translateX(-50%) rotate(90deg);
+        }
+      }
+    }
+
+    &--5 {
+      background: $blue url("../images/icons/scheme-icon-5.svg") center center
+        no-repeat;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+}

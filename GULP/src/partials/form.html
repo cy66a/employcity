@@ -1,0 +1,44 @@
+
+<form class="order__form form" action="mail.php" method="POST" enctype="multipart/form-data">
+
+	<div class="form__group form__group--1">
+
+		<select class="form__select">
+			<option value="0" style="display: none;">Выберите тип системы</option>
+			<option value="1">Sed ut perspiciatis</option>
+			<option value="2">Nemo enim ipsam</option>
+			<option value="3">Et harum quidem</option>
+			<option value="4">Temporibus autem</option>
+			<option value="5">Itaque earum rerum</option>
+		</select>
+
+		<input class="form__email" type="email" name="e-mail" id="email" placeholder="Ваш e-mail">
+
+		<input class="form__name" type="text" name="name" placeholder="Ваше имя">
+
+	</div>
+
+	<div class="form__group form__group--2">
+
+		<div class="form__range-block">
+			<div class="form__text">
+				<label for="range">Sed ut perspiciatis, unde omnis iste natus</label>
+				<output class="form__output" id="form__output">70%</output>
+			</div>
+
+			<input class="form__range" id="range" type="range" value="70" min="0" max="100"
+				oninput="form__output.value=value + '%'">
+		</div>
+
+		<input class="form__file" type="file" name="file" id="form__file">
+		<label class="form__label" for="form__file">
+			<img src="assets/images/icons/file-icon.svg" alt="File icon">
+			<span>Прикрепить файл</span>
+		</label>
+
+	</div>
+
+	<div class="form__group form__group--3">
+		<button class="form__button button" type="submit">Отправить</button>
+	</div>
+</form>

@@ -1,0 +1,66 @@
+.intro {
+  // min-height: 100vh;
+  padding: 20rem 0 20rem 0;
+  background: url("../images/intro-bg.jpg") top center/cover no-repeat;
+  color: $black;
+
+  @include breakpoint($md-bp) {
+    padding: 12rem 0 6rem 0;
+  }
+  
+  &__inner {
+    max-width: 78rem;
+  }
+
+  &__title {
+    @include adaptiv-font(48, 22);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    margin: 0 0 8rem 0;
+
+    @include breakpoint($mobile-bp) {
+      margin: 0 0 4rem 0;
+    }
+  }
+
+  &__description {
+    margin: 0 0 8rem 0;
+  }
+
+  &__sub-title {
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    @include adaptiv-font(20, 16);
+  }
+
+  &__item {
+    @include adaptiv-font(20, 16);
+    align-items: center;
+    position: relative;
+  
+    &::before {
+      width: 25px;
+      display: inline-block;
+      text-align: center;
+      content: "-";
+      
+    }
+  }
+
+  &__buttons {
+    display: flex;
+
+  }
+
+  &__order-button,
+  &__more-button {
+    width: 100%;
+    max-width: 18rem;
+  }
+
+  &__more-button {
+    margin: 0 0 0 3rem;
+  }
+}

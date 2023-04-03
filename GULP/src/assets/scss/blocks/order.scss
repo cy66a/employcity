@@ -1,0 +1,22 @@
+.order {
+  padding: 12rem 0 15rem 0;
+  background: $secondary url("../images/order-bg.png") top center / cover no-repeat;
+
+      @include breakpoint($md-bp) {
+        padding: 6rem 0;
+          }
+
+  &__title {
+    @include adaptiv-font(36, 26);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 3rem 0;
+  }
+
+  &__sub-title {
+    @include adaptiv-font(18, 16);
+    text-align: center;
+    margin: 0 0 8rem 0;
+  }
+}

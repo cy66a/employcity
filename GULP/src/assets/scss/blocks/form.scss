@@ -1,0 +1,135 @@
+.form {
+  @include adaptiv-font(18, 16);
+  line-height: 1;
+
+  &__group {
+    display: flex;
+  }
+
+  &__group--1 {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 0 0 3rem 0;
+
+    input:focus {
+      outline: 2px solid $blue;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+  }
+
+  &__group--1 > * {
+    flex: 1 1 auto;
+    padding: 1rem;
+    height: 4.8rem;
+    border-radius: 3px;
+
+    @include breakpoint($tablet-bp) {
+      flex: 1 1 100%;
+    }
+  }
+
+  // Группа 2
+
+  &__group--2 {
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 0 4rem 0;
+
+    @include breakpoint($md-bp) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0.5rem 0;
+  }
+
+  &__output {
+    margin: 0 0 0 1rem;
+  }
+
+  &__range-block {
+    flex: 0 1 770px;
+
+    @include breakpoint($md-bp) {
+      flex: 0 1 100%;
+    }
+  }
+
+  #range {
+    width: 100%;
+  }
+
+  #range[type="range"] {
+    -webkit-appearance: none;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid $white;
+    border-radius: 5px;
+  }
+
+  #range[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: $light-blue;
+    border: 3px solid $middle-blue;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background 0.3s ease-in-out;
+  }
+
+  #range[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  &__file {
+    display: none;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 370px;
+    height: 4.8rem;
+    padding: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    background: $white;
+    border: 2px solid $warm-blue;
+    border-radius: 4px;
+    cursor: pointer;
+
+    span {
+      margin: 0 0 0 1rem;
+    }
+  }
+
+  //Группа 3
+
+  &__group--3 {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
+//Полнузнок Range
